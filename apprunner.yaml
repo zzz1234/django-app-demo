@@ -9,6 +9,6 @@ run:
   command: sh startup.sh
   network:
     port: 8000
-secrets:
+  secrets:
     - name: DATABASE_SECRET
       value-from: "arn:aws:secretsmanager:ap-southeast-2:058264466970:secret:DJANGO_APP_DATABASE_URL-1UC58e"
